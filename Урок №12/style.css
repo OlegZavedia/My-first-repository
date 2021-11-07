@@ -17,11 +17,11 @@ body {
   background: rgb(233, 233, 233);
   background: linear-gradient(
     68deg,
-    rgb(77, 74, 74) 2%,
-    rgb(255, 255, 255) 17%,
-    rgb(57, 7, 151) 36%,
-    rgb(114, 114, 114) 60%,
-    rgb(179, 0, 255) 78%,
+    rgba(233, 233, 233, 1) 2%,
+    rgba(207, 207, 207, 1) 17%,
+    rgba(149, 126, 136, 1) 36%,
+    rgba(102, 74, 95, 1) 60%,
+    rgba(66, 47, 74, 1) 78%,
     rgba(23, 29, 36, 1) 95%
   );
   border: 1px solid black;
@@ -30,7 +30,7 @@ body {
   justify-content: center;
   -webkit-box-shadow: 2px 3px 89px 53px rgba(0, 132, 233, 0.3);
   -moz-box-shadow: 2px 3px 89px 53px rgba(0, 145, 255, 0.3);
-  box-shadow: 5px 9px 96px 48px rgba(24, 134, 218, 0.3);
+  box-shadow: 2px 3px 89px 53px rgba(24, 134, 218, 0.3);
 }
 .social {
   display: flex;
@@ -200,4 +200,8 @@ input[type="submit"]:hover,
     rgba(74, 92, 102, 1) 100%,
     rgba(101, 65, 82, 1) 100%
   );
+}
+.submit:hover{
+border-radius: 10px;
+background: lightcoral;
 }
