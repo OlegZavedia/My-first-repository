@@ -1,0 +1,33 @@
+.container{
+background: sienna;
+box-shadow: 0 7px 3px 6px;
+height: auto;
+padding: 20px 10px;
+max-width: 550px;
+margin: 5px auto;
+width: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h6 {
+    font-size: 18px;
+}
+#hover:hover{
+color: grey;
+cursor: grab;
+
+}
+#active:active{
+    color: gold;
+
+}
+#visited{
+    color:red;
+
+}
+a{
+    text-decoration: none
+}
