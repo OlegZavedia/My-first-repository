@@ -11,13 +11,13 @@
     <div class="container">
         <h1>Pseudo-element Examples</h1>
       <h2>Example 1 (::after)</h2>
-      <p><a href="http://www.google.com" class="arrow">Зі стрілкою</a></p>
+      <p><a href="http://www.google.com" class="arrow"></a></p>
   
       <h2>Example 2 (::before, ::after)</h2>
-    <p><a href="http://www.google.com" class="hexagon">З анімованою стрілкою</a></p>
+    <p><a href="http://www.google.com" class="hexagon"></a></p>
   
       <h2>Example 3 (::after)</h2>
-    <p><a href="http://www.google.com" class="print">Щось там..</a></p>
+    <p><a href="http://www.google.com" class="print"></a></p>
     </div>
     <div>
     <h2>Link pseudo-classes</h2>
@@ -37,11 +37,11 @@
   <div>
     <h2>User Interface State Pseudo-Classes</h2>
     
-    First Name: <input type="text" name="fname" placeholder="Malcolm" />
+    First Name: <input type="text" name="fname" placeholder="FNAME" />
     
-    Last Name: <input type="text" name="lname" placeholder="Reynolds" disabled />
+    Last Name: <input type="text" name="lname" placeholder="LNAME" disabled />
     
-    Я маю кішку. <input type="checkbox" name="vehicle" value="Firefly-class" checked />
+    Я згоден. <input type="checkbox" name="vehicle" value="Firefly-class"  />
   </div>
   <div>
     <h2>Structural and Position Pseudo-Classes</h2>
@@ -52,7 +52,7 @@
       <li>This list item is not selected</li>
       
       <li>
-        <a href="#">This listed link is selected by :only-child</a>
+        <a class="only-child" href="#">This listed link is selected by :only-child</a>
       </li>
       
       <li>This list item is selected by :last-child</li>
@@ -67,7 +67,7 @@
     
     <span>This span is selected by :only-of-type</span>
     
-    <p>This paragraph is selected by :last-of-type</p>
+    <p class="last-of-type">This paragraph is selected by :last-of-type</p>
   </article>
   <article>
     <h3>:nth-child(n) and :nth-last-child(n)</h3>
@@ -84,7 +84,7 @@
     
     <h6 class="bold">This is some bold text</h6>
     <h6 class="bold">This is some more bold text</h6>
-    <h6>This is selected with :not(.bold) and is not bold</h6>
+    <h6 class="not-bold">This is selected with :not(.bold) and is not bold</h6>
   </div>
 </body>
 </html>
