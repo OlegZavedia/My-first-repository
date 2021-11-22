@@ -117,22 +117,3 @@ ul {
 
 
 
-.main-inner {
-    width: 100%;
-}
-
-.main-intro {
-    margin: 100px 0 0 0;
-}
-
-.main-intro-line {
-    width: 50px;
-    height: 3px;
-    background-color: #555555;
-    margin: 30px auto;
-}
-
-.main-intro > p {
-    font-size: 16px;
-    text-align: center;
-}
