@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_0VFF7PRjZyk3IwhxnrOKS');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_sz74ky8', 'template_y6pgc3p', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Document</title>
+</head>
+<body>
+  <form action="" id="contact-form">
+    <input type="hidden" name="contact_number">
+
+      <label>Name:</label>
+      <input type="text" name="from_name" value="" placeholder="name" /> 
+      <div>
+          <label>Phone:</label>
+          <input type="tel" name="phone" placeholder="phone" />
+      </div>
+      <label>Email:</label>
+      <input type="email" name="reply_to" placeholder="email" />
+      <p>Type your message here:</p>
+      <textarea class="message" name="message" id="" cols="30" rows="10"></textarea>
+      <div class="send">
+        <input type="submit" name="send" value="send" />
+    </div>
+  </form>  
+<a class="help" href="#">Need additional help?</a>
+<div class="btn">
+    <a href="#">Please,contact us.</a>
+</div>
+<div class="right">
+    <h2>Hello,User!</h2>
+    <p>If you want to know more info about our project than</p>
+    <a class="arrow" href="#">
+        CLICK
+    </a>
+</div>
+</body>
+</html>
