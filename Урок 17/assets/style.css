@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: chocolate;
+}
+.container{
+    height: 1330px;
+}
+
+.card{
+    height: 700px;
+    margin: 30px;
+    width: 600px;
+    border-radius: 50px;
+    border: 5px black;
+}
+
+.card > .card-img-top{
+    margin: 0 auto;
+    width: 200px;
+}
+.card .btn{
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: rgb(84,18,28);
+    background: linear-gradient(344deg, rgba(84,18,28,1) 0%, rgba(250,162,56,1) 45%, rgba(40,71,115,1) 85%, rgba(19,85,135,1) 100%);
+    width: 150px;
+    position: relative;
+    top: 60px;
+   
+}
+
+.btn a{
+    text-decoration: none;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 20px;
+}
+.card-group .card .btn{
+    display: flex;
+    justify-content: center;
+
+}
+.card-group{
+    height: 700px;
+ 
+}
+.card-body{
+margin: 30px;
+width: 80%;
+
+}
+.price{
+    margin: 0 auto;
+    width: 100px;
+    height: 80px;
+    border: 2px black;
+    background-color: indigo;
+    border-radius: 15px;
+}
+.price > h5{
+    color: ivory;
+    font-size: 35px;
+}
+.company{
+    width: auto;
+    height: px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+.h6 a{
+    color: blanchedalmond;
+    text-decoration: yellow;
+    margin: 0 auto;
+    font-size: 25px;
+}
+.h6 a:hover{
+    font-size: 35px;
+    cursor: text;
+    align-items: center;
+}
+.company:hover{
+    width: 100px;
+    height: 75px;
+    border-radius: 10px;
+}
+.price:hover{
+    margin: 0 auto;
+    width: 200px;
+    border: 3px white;
+    height: 150px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.price h5:hover{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
